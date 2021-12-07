@@ -14,12 +14,17 @@
             {{ article.createdAt }}
           </span>
         </div>
-        <span>
-          <mc-follow *ngIf="!(isAuthor$ | async)"
+        <span *ngIf="!(isAuthor$ | async)">
+          <mc-follow
             [following]="article.author.following"
             [userProfileSlug]="article.author.username"
             [userName]="article.author.username">             
           </mc-follow>
+          <mc-add-to-favorites
+            [isFavorited]="article.favorited"
+            [articleSlug]="article.slug"
+            [favoritesCount]="article.favoritesCount">
+        </mc-add-to-favorites>
         </span>
         <span *ngIf="isAuthor$ | async">
           <a

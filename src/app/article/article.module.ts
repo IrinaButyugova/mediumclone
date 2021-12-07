@@ -13,6 +13,7 @@ import {ErrorMessageModule} from 'src/app/shared/modules/errorMessage/errorMessa
 import {TagListModule} from 'src/app/shared/modules/tagList/tagList.module'
 import {DeleteArticleEffect} from './store/effects/deleteArticle.effect'
 import {ArticleService} from 'src/app/article/services/article.service'
+import {FollowModule} from '../shared/modules/follow/follow.module'
 
 const routes = [
   {
@@ -29,7 +30,8 @@ const routes = [
     EffectsModule.forFeature([GetArticleEffect, DeleteArticleEffect]),
     LoadingModule,
     ErrorMessageModule,
-    TagListModule
+    TagListModule,
+    FollowModule
   ],
   declarations: [ArticleComponent],
   providers: [ArticleService, SharedArticleService]

@@ -1,10 +1,10 @@
 import {Injectable} from '@angular/core'
 import {Observable} from 'rxjs'
-import {UserProfileInterface} from '../types/userProfile.interface'
+import {UserProfileInterface} from '../../shared/types/userProfile.interface'
 import {HttpClient} from '@angular/common/http'
 import {environment} from 'src/environments/environment'
 import {map} from 'rxjs/operators'
-import {GetUserProfileResponseInterface} from '../types/getUserProfileResponse.interface'
+import {GetUserProfileResponseInterface} from '../../shared/types/getUserProfileResponse.interface'
 
 @Injectable()
 export class UserProfileService {

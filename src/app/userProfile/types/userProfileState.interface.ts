@@ -1,4 +1,4 @@
-import {UserProfileInterface} from './userProfile.interface'
+import {UserProfileInterface} from '../../shared/types/userProfile.interface'
 
 export interface UserProfileStateInterface {
   data: UserProfileInterface | null

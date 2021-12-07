@@ -1,6 +1,6 @@
 import {createAction, props} from '@ngrx/store'
 import {ActionTypes} from '../actionTypes'
-import {UserProfileInterface} from '../../types/userProfile.interface'
+import {UserProfileInterface} from '../../../shared/types/userProfile.interface'
 
 export const getUserProfileAction = createAction(
   ActionTypes.GET_USER_PROFILE,

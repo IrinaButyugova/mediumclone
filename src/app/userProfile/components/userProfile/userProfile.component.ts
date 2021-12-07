@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core'
-import {UserProfileInterface} from '../../types/userProfile.interface'
+import {UserProfileInterface} from '../../../shared/types/userProfile.interface'
 import {Observable, Subscription, combineLatest} from 'rxjs'
 import {Store, select} from '@ngrx/store'
 import {getUserProfileAction} from '../../store/actions/getUserProfile.action'

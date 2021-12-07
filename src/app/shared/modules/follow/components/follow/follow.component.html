@@ -1,0 +1,6 @@
+<button (click)="handleFollow()"
+    class="btn btn-sm btn-outline-secondary action-btn">
+            <i class="ion-plus-round"></i>
+            <span *ngIf="following">&nbsp;Unfollow {{userName}}</span>
+            <span *ngIf="!following">&nbsp;Follow {{userName}}</span>
+</button>

@@ -9,7 +9,7 @@ import {
   getUserProfileSuccessAction,
   getUserProfileFailureAction
 } from '../actions/getUserProfile.action'
-import {UserProfileInterface} from '../../types/userProfile.interface'
+import {UserProfileInterface} from '../../../shared/types/userProfile.interface'
 
 @Injectable()
 export class GetUserProfileEffect {
